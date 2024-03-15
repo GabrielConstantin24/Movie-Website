@@ -1,0 +1,46 @@
+<div class="login-container">
+    <img class="film" src="assets/images/film.png" alt="">
+
+    <div class="logo">BTZ-Movie</div>
+
+    <div class="description">
+        BTZ-Movie este cea mai de încredere sursa de recomandare din lume pentru
+        divertisment de calitate. Ca principal agregator online de filme și emisiuni TV
+        recenzii de la critici, oferim fanilor un ghid cuprinzător despre ceea ce este
+        Proaspăt – și ceea ce este putred – în cinematografe și acasă. Dacă ești un
+        fan de divertisment care caută o recomandare sau să împărtășească o părere,
+        ai ajuns la locul potrivit.
+    </div>
+
+    <div class="login-form">
+
+        <div class="form-group">
+          <label for="uname">Username</label>
+          <input
+            type="text"
+            name="uname"
+            class="form-control"
+            [(ngModel)]="username"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="pword">Password</label>
+          <input
+            type="password"
+            name="pword"
+            class="form-control"
+            [(ngModel)]="password"
+          />
+        </div>
+
+        <div class="btn-container">
+
+          <div class="error">{{ errorMsg }}</div>
+
+          <button class="btn btn-dark" (click)="login()">Login</button>
+
+        </div>
+
+    </div>
+</div>
